@@ -1,49 +1,68 @@
 {
-  "docsets_to_publish": [
-    {
-      "docset_name": "sacorDocsetTest",
-      "build_source_folder": "sacorDocsetTest",
-      "build_output_subfolder": "sacorDocsetTest",
-      "locale": "es-es",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    }
-  ],
-  "notification_subscribers": [],
-  "sync_notification_subscribers": [],
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "PDF"
+    ]
+  },
   "branches_to_filter": [
     "live-sxs",
     "master-sxs"
   ],
   "continue_with_document_error": true,
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
+  "contribution_branch_mappings": {
+    "live-sxs-sxs": "live-sxs"
+  },
   "dependent_repositories": [
     {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.es-es",
       "branch": "master",
-      "branch_mapping": {}
+      "branch_mapping": {},
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.es-es"
     },
     {
-      "path_to_root": "_repo.en-us",
-      "url": "https://github.com/sacor/sacor-test",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
         "master": "master"
+      },
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/sacor/sacor-test"
+    },
+    {
+      "branch": "master",
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf"
+    }
+  ],
+  "docsets_to_publish": [
+    {
+      "build_entry_point": "docs",
+      "build_output_subfolder": "sacorDocsetTest",
+      "build_source_folder": "sacorDocsetTest",
+      "docset_name": "sacorDocsetTest",
+      "locale": "es-es",
+      "moniker_ranges": [],
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "template_folder": "_themes",
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
       }
     }
   ],
-  "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false
+  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_url_open_to_public_contributors": "https://github.com/sacor/sacor-test.es-es",
+  "need_generate_pdf_url_template": true,
+  "need_preview_pull_request": true,
+  "notification_subscribers": [],
+  "skip_source_output_uploading": false,
+  "sync_notification_subscribers": [],
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  }
 }
