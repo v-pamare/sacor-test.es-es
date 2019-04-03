@@ -10,8 +10,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "x",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "test"
         ],
         "files": [
           "**/*.md",
@@ -25,9 +25,10 @@
     "globalMetadata": {
       "breadcrumb_path": "/sacorDocsetTest/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "test": "xx"
     },
-    "markdownEngineName": "dfm-latest",
+    "markdownEngineName": "markdig",
     "overwrite": [],
     "resource": [
       {
