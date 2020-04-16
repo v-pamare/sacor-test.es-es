@@ -10,8 +10,7 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "test"
+          "ThirdPartyNotices"
         ],
         "files": [
           "**/*.md",
@@ -24,9 +23,10 @@
     "fileMetadata": {},
     "globalMetadata": {
       "breadcrumb_path": "/sacorDocsetTest/breadcrumb/toc.json",
+      "path": "docs/test.es-es",
       "extendBreadcrumb": true,
-      "feedback_system": "None",
-      "test": "xx"
+      "bilingual_type": "hover over",
+      "feedback_system": "None"
     },
     "markdownEngineName": "markdig",
     "overwrite": [],
